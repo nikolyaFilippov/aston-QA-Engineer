@@ -12,6 +12,9 @@ public class MainStart {
         fan.printWorBoolean(-10);//7 задание
         fan.printString("Привет",5);//8 задание
         fan.isLeapYear(400);//9 задание
+        fan.arreiTurnOver();// 10 задание
+        fan.arreiNew();//11 задание
+       // fan.arreiMultiply();// 12 задание
 
 
 

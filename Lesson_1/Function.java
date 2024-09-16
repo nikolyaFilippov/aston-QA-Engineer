@@ -5,6 +5,7 @@ public class Function {
     public int b = 9;
     public int c = 11;
     public int d = 18;
+    int[] arrei = new int[10];
 
 
 
@@ -109,6 +110,47 @@ public class Function {
 
         }
     }
+    public void arreiTurnOver(){
+        int[] arrei ={1,1,0,0,1,0,1,1,0,0};
 
+        for (int i = 0; i <arrei.length; i++ ){
+
+            System.out.print(arrei[i]+" ");
+        }
+            System.out.println("Массив до изменения");
+        for (int i = 0; i <arrei.length; i++){
+            if (arrei[i] == 0) {
+                arrei[i] = 1;
+            }else {
+                arrei[i] = 0;
+            }
+        }
+        for (int i = 0; i <arrei.length; i++){
+            System.out.print(arrei[i]+" ");
+        }
+        System.out.println("Массив после изменения");
+    }
+    public void arreiNew(){
+        int[] arrei = new int[100];
+        for (int i = 0; i<arrei.length; i++){
+            int j = 1+i;
+            arrei[i] = j;
+        }
+        System.out.println(arrei[0]+" "+arrei[1]+" "+arrei[2]+"..."+arrei[98]+" "+arrei[99]+" Массив инициализирован");
+    }
+    public void arreiMultiply(){
+        int[] arrei ={1,5,3,2,11,4,5,2,4,8,9,1};
+            for (int i = 0; i<arrei.length; i++){
+                System.out.print(arrei[i]+" ");
+            }
+            System.out.println("\n"+"Начальный массив");
+            for (int i = 0; i<=arrei.length; i++){
+                if (arrei[i]<6) {
+                    int j = i;
+                    arrei[i] = j * 2;
+                }
+                System.out.print(arrei[i]+" "+" "+i);
+            }
+    }
 }
 
